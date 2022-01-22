@@ -26,6 +26,7 @@ class Tag(models.Model):
         verbose_name_plural = 'Тэги'
         ordering = ['title']
 
+
 class Post(models.Model):
     title = models.CharField(max_length=150, verbose_name='Название поста')
     slug = models.SlugField(max_length=150, verbose_name='Url', unique=True)
