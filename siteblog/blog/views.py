@@ -3,6 +3,6 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse ('<h1> HEllo world </h1>')
+    return render(request, template_name='blog/index.html')
 
 # Create your views here.
